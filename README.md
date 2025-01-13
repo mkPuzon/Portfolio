@@ -1,4 +1,4 @@
-# # AI Engineer
+# AI Engineer
 
 #### Technical Skills: Python, C++, R, TensorFlow
 
