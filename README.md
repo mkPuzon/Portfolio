@@ -1,4 +1,4 @@
-# Madelyn Puzon - AI Engineer and Researcher ![Link to img](/path/to/img.jpg)
+# Madelyn Puzon - AI Engineer and Researcher
 
 #### **Technical Skills**: Python, C, R, TensorFlow, Git, Bash, RAG, Fine-Tuning
 #### **Relevant Coursework**: Neural Network & Deep Learning, Mathematical Data Analysis and Visualization, Statistics and Data Science, Linear Algebra, Artificial Intelligence and Human Values, Artificial Intelligence Lab
