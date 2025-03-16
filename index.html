@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madelyn Puzon | Computer Scientist & Philosopher</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #ca7010;
+            --dark-color: #1e1e24;
+            --light-color: #f8f9fa;
+            --accent-color: #63c563;
+            --text-color: #333;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--accent-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+        
+        .section-title span {
+            color: var(--primary-color);
+        }
+        
+        /* Header */
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: var(--dark-color);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .header-content h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        
+        .highlight {
+            color: var(--primary-color);
+        }
+        
+        /* Code Design Background */
+        .code-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            color: #63c563;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            overflow: hidden;
+            opacity: 0.4;
+        }
+        
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem; /* Add horizontal padding directly to nav */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0; /* Ensure it starts from the left edge */
+            right: 0; /* Ensure it extends to the right edge */
+            z-index: 100;
+            background-color: #1e1e24;
+            transition: var(--transition);
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .scrolled {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* About Section */
+        .about {
+            background-color: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .skill-tag {
+            background-color: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        
+        .skill-tag:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Projects Section */
+        .my-Projects {
+            background-color: #f8f9fa;
+        }
+
+        .Projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .Projects-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .Projects-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .Projects-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .Projects-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Philosophy Section */
+        .philosophy {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+        }
+        
+        .philosophy-quote {
+            font-size: 1.8rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            position: relative;
+        }
+        
+        .philosophy-quote::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            left: -2rem;
+            top: -1rem;
+            color: var(--primary-color);
+            opacity: 0.5;
+        }
+        
+        .philosophy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-img {
+            height: 200px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-color);
+            font-size: 3rem;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-content h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        
+        .project-tag {
+            background-color: #e9ecef;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: rgb(201, 30, 30);
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .social-links {
+            margin: 1.5rem 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 3rem;
+            }
+            
+            .header-content h2 {
+                font-size: 1.5rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .code-bg {
+                display: none;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">MP</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#My-Projects">Projects</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <h1>Hi there, I'm <span class="highlight">Madelyn Puzon</span></h1>
+                <h2>Programmer & Philosopher</h2>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="code-bg">
+            <pre>
+    
+                
+            
+// Life Philosophy
+function createMeaning() {
+  const knowledge = seekTruth();
+  const purpose = findPassion();
+  
+  while (alive) {
+    learn();
+    create();
+    connect();
+    reflect();
+  }
+  return leavePositiveImpact();
+}
+// Code Philosophy
+function writeCode() {
+  let solution = planArchitecture();
+
+  while (!isElegant(solution)) {
+    solution = refactor(solution);
+    solution = simplify(solution);
+  }
+  test(solution);
+  document(solution);
+
+  return solution;
+}
+
+            </pre>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/pfp1.jpeg" alt="Profile Photo" style="border: 6px solid #ca7010; border-radius: 5px;">
+                </div>
+                <div class="about-text">
+                    <h3>AI Engineer Programming Beyond The Parameters</h3>
+                    <p>I'm a Computer Science student at Colby College with a specialized focus on Artificial Intelligence and Philosophy. Currently working as a tutor at the Davis Institute for Artificial Intelligence, I design privacy-focused AI agents using fine-tuning and retrieval-augmented generation techniques. My research experience includes developing locally-run language models and creating a biologically inspired neural network for heading perception.</p>
+                    <p>With strong technical skills in Python, C, TensorFlow, and various AI methodologies including CNNs, LLMs, and RAG, I combine technical work with philosophical inquiry to approach AI development ethically and thoughtfully. I'm passionate about creating AI solutions that respect privacy while delivering powerful functionality, especially in academic and research environments.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">DCNNs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Fine-Tuning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="My-Projects" class="My-Projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Work</span></h2>
+            <div class="Projects-grid">
+                <div class="Projects-card">
+                    <i>🤖</i>
+                    <h3>AI Tutoring & Custom Agents</h3>
+                    <p>At the Davis Institute for Artificial Intelligence, I design locally run AI agents using fine-tuning and retrieval-augmented generation (RAG) to ensure privacy while tailoring functionality for faculty needs. I work with HuggingFace, TensorFlow, and Ollama libraries to deliver reliable and private AI solutions.</p>
+                </div>
+                <div class="Projects-card">
+                    <i>🧠</i>
+                    <h3>Language Model Research</h3>
+                    <p>Developed a local AI system integrating RAG and web search capabilities on consumer-grade hardware. Optimized open-source models for accuracy, coherence, and rule-following using Ollama. Fine-tuned Llama 3.2 and DistilBERT models for sentiment analysis and message classification, enhancing model accuracy by up to 40%.</p>
+                </div>
+                <div class="Projects-card">
+                    <i>👁️</i>
+                    <h3>Biologically Inspired AI</h3>
+                    <p>Created a novel approach to the longstanding research problem of determining heading from optic flow using a biologically inspired neural network. Achieved human levels of accuracy without relying on high-level libraries. Implemented custom optimization algorithms, generated synthetic data, and performed comprehensive parameter tuning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
