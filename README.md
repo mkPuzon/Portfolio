@@ -1,7 +1,7 @@
 # Madelyn Puzon - AI Engineer and Researcher
 
-#### **Technical Skills**: Python, C, R, TensorFlow, Git, Bash, RAG, Fine-Tuning
-#### **Relevant Coursework**: Neural Network & Deep Learning, Mathematical Data Analysis and Visualization, Statistics and Data Science, Linear Algebra, Artificial Intelligence and Human Values, Artificial Intelligence Lab
+#### **Technical Skills**: Python, C, R, Git, TensorFlow, RAG, Fine-Tuning
+#### **Relevant Coursework**: Neural Networks & Deep Learning, Mathematical Data Analysis and Visualization, Statistics and Data Science, Linear Algebra, Artificial Intelligence and Human Values, Artificial Intelligence Lab
 
 ## Education	 			        		
 - B.A., Computer Science: AI Concentration | Colby College (_May 2026_)
@@ -24,7 +24,7 @@
 
 ## Projects
 ### Deep Neural Network Library
-[Repository](https://github.com/mkPuzon/Portfolio)
+[Repository](https://github.com/mkPuzon/Neural-Nets-Library)
 
 A large, modular library to build deep neural networks using the low level Keras API with a focus on performance. The project makes use of a flexible layer & block system to build, test, tweak, and assess models with ease. Additonally implements a variety of techniques in order to allow for deeper neural networks to run efficiently, including He weight intitialization, early stopping, regularization, batch normalization, dropout, learning rate decay, and more.
 
