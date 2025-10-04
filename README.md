@@ -4,8 +4,7 @@
 #### **Relevant Coursework**: Deep Learning, Neural Networks, Programming Languages, Mathematical Data Analysis and Visualization, Statistics and Data Science, Linear Algebra, Data Structures and Algorithms, Artificial Intelligence and Human Values.
 
 ## Education	 			        		
-- B.A. Computer Science: AI Concentration | Colby College (_May 2026_)
-- B.A. Philosophy | Colby College (_May 2026_)
+- B.A. Computer Science: AI Concentration & Philosophy | Colby College (_May 2026_)
 
 ## Work Experience
 **A.I. Research Assistant & Tutor @ Davis Institute for Artificial Intelligence (_October 2024 - Present_)**
