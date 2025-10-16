@@ -11,10 +11,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
         
         :root {
-            --primary-color: #2d2a2f;
-            --secondary-color: #583a91;
-            --text-color: #e6dad2;
-            --light-color: #a7a3ad;
+            --primary-color: #1a1c2d;
+            --secondary-color: #d2a551;
+            --accent-color: #292c3d;
+            --text-color: #ecf0f3;
+            --light-color: #3d4052;
         }
         
         * {
@@ -56,7 +57,7 @@
         }
         
         nav {
-            background-color: var(--primary-color);
+            background-color: var(--accent-color);
             padding: 1rem 0;
         }
         
@@ -88,7 +89,7 @@
         .section-title {
             text-align: center;
             margin-bottom: 2rem;
-            color: var(--secondary-color);
+            color: var(--text-color);
             font-size: 2rem;
             position: relative;
             padding-bottom: 0.5rem;
@@ -196,7 +197,7 @@
         }
         
         .skill-tag {
-            background-color: var(--light-color);
+            background-color: var(--primary-color);
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -206,7 +207,7 @@
         
         .skill-tag:hover {
             transform: scale(1.10);
-            background-color: var(--secondary-color);
+            background-color: var(--light-color);
         }
         
         .btn {
@@ -245,7 +246,7 @@
         }
         
         .social-links a {
-            color: var(--secondary-color);
+            color: var(--light-color);
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -277,7 +278,7 @@
         .contact-info {
             margin-top: 2rem;
             padding: 1rem;
-            background-color: #1d1b18;
+            background-color: var(--secondary-color);
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
@@ -327,7 +328,7 @@
         </div>
     </nav>
     
-    <section id="about">
+    <section id="about" style="background-color: var(--primary-color);">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
@@ -341,6 +342,26 @@
                     <br>
                     <p>I'm currently seeking opportunities in machine learning engineering or software engineering.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: var(--secondary-color);"">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Tensorflow</span>
+                <span class="skill-tag">Neural Network Design</span>
+                <span class="skill-tag">Deep Neural Networks (DCNNs)</span>
+                <span class="skill-tag">LLMs</span>
+                <span class="skill-tag">Fine-tuning</span>
+                <span class="skill-tag">RAG Pipelines</span>
+                <span class="skill-tag">Git/Github</span>
+                <span class="skill-tag">WSL</span>
+                <span class="skill-tag">Data Structures & Algorithms</span>
+                <span class="skill-tag">Statistical Analysis</span>
             </div>
         </div>
     </section>
@@ -359,7 +380,7 @@
                             <li><b>Tech Stack</b>: Python, PyTorch, Transformers, FastAPI, Docker, Hugging Face Spaces.</li>
                             <li><b>Skills</b>: End-to-End MLOps, API Development, Model Deployment, Containerization.</li>
                         </p>
-                            <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
+                            <a href="https://github.com/mkPuzon/guardian-models" class="btn" style="margin-top: 1rem;">View Repo</a>
                     </div>
                 </div>
                 
@@ -380,10 +401,10 @@
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/p1.jpg" alt="Project thumbnail">
+                        <img src="assets/auraLogo.png" alt="Project thumbnail">
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">-</h3>
+                        <h3 class="project-title">AURA</h3>
                         <p>
                             <li></li>
                             <li></li>
@@ -396,7 +417,7 @@
             </div>
     </section>
 
-    </section id="work" style="background-color: var(--light-color);">
+    <section id="work" style="background-color: var(--primary-color);">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
             <div class="projects-grid">
@@ -417,7 +438,7 @@
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/research1.png" alt="OWLab Logo">
+                        <img src="assets/owlabLogo.png" alt="OWLab Logo">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">OWLab Research Assistant</h3>
@@ -432,7 +453,7 @@
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/LogoColbyWithIcon.svg" alt="Colby Logo">
+                        <img src="assets/colbyLogo.png" alt="Colby Logo">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Computer Science Department Teaching Assistant</h3>
@@ -445,26 +466,6 @@
                     </div>
                 </div>
             </div>
-    </section>
-    
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-list">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Machine Learning</span>
-                <span class="skill-tag">Tensorflow</span>
-                <span class="skill-tag">Neural Network Design</span>
-                <span class="skill-tag">Deep Neural Networks (DCNNs)</span>
-                <span class="skill-tag">LLMs</span>
-                <span class="skill-tag">Fine-tuning</span>
-                <span class="skill-tag">RAG Pipelines</span>
-                <span class="skill-tag">Git/Github</span>
-                <span class="skill-tag">WSL</span>
-                <span class="skill-tag">Data Structures & Algorithms</span>
-                <span class="skill-tag">Statistical Analysis</span>
-            </div>
-        </div>
     </section>
     
     <section id="connect" class="social-section">
