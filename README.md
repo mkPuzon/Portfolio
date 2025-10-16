@@ -1,4 +1,5 @@
 # Madelyn Puzon - AI Engineer and Researcher
+Hi there! I'm Maddie, a computer science and philosophy student specializing in AI research with expertise in neural network architectures, biological vision modeling, and LLM optimization with 2+ years of research experience. To get in touch, click the icons below.
 
 #### **Technical Skills**: Python, WSL2, Git, TensorFlow, RAG, Fine-Tuning
 #### **Relevant Coursework**: Deep Learning, Neural Networks, Programming Languages, Mathematical Data Analysis and Visualization, Statistics and Data Science, Linear Algebra, Data Structures and Algorithms, Artificial Intelligence and Human Values.
@@ -8,7 +9,8 @@
 
 ## Work Experience
 **A.I. Research Assistant & Tutor @ Davis Institute for Artificial Intelligence (_October 2024 - Present_)**
-- Educated staff, faculty, and students on the responsible and effective use of artificial intelligence, with a focus on large language models (LLMs). 
+- Designed and prototyped an automated glossary for educational
+- Engineered private AI solutions by training and evaluating open-source LLMs using RAG and fine-tuning, optimizing model performance for accurate and fair content filtering in educational research settings.
 - Assisted in developing platforms to ensure equitable access to AI tools, fostering proficiency and ethical usage across diverse audiences.
 
 **OWLab Summer Research Assistant @ Colby College (_May 2024 - Present_)**
@@ -22,30 +24,69 @@
 - Proposed curriculum improvements based on observed trends, enhancing student learning outcomes.
 
 ## Projects
-### Deep Neural Network Library
-[Repository](https://github.com/mkPuzon/Neural-Nets-Library)
 
-A modular library to build deep neural networks using the functional Keras API with a focus on performance. The project makes use of a flexible layer & block system to build, test, tweak, and assess models with ease. Additonally implements a variety of techniques in order to allow for deeper neural networks to run efficiently, including a varity of weight intitialization methods, early stopping, regularization, batch normalization, learning rate decay, and more.
-
-![Link to img](/path/to/img.jpg)
-
-
-### Tool Calling AI Agents
+### Fine-Tuned Guardian Model with End-to-End API
 [Repository](https://github.com/mkPuzon/Portfolio)
 
-A personalizable assistant prototype utilizing a locally run language model with access to tools. The model currently has capabilities to schedule events in Google Calendar, check local weather, and give me personal remiders. Tools are highly customizable and written in Python.
+Developed and deployed a full-stack machine learning application to perform real-time sentiment analysis. This project involved wrapping a fine-tuned DistilBERT model , which achieved 95% accuracy, into a REST API using FastAPI. The entire application was containerized with Docker and deployed to the cloud, demonstrating a complete model-to-production workflow.
+
+**Tech Stack**: Python, PyTorch, Transformers, FastAPI, Docker, Hugging Face Spaces.
+
+**Skills**: End-to-End MLOps, API Development, Model Deployment, Containerization.
 
 ![Link to img](/path/to/img.jpg)
 
+### AI Understanding, Research, and Analytic glossary for AI education
+Designed and developed the backend for an AI powered self-updating glossary from cutting edge research on artificial intelligence. The AURA system scrapes research papers from a variety of AI subtoics, extracts key words and concepts, defines them within the contex of the paper, and integrates them into a PostgreSQL database.
 
-### Local LLM Fine-Tuning Framework
-[Repository](https://github.com/mkPuzon/Portfolio)
+## Research
+### Building and Evaluating Deep Image Computable Neural Networks (OWLab)
+Our goal was to better understand how brain area MSTd processes motion through building biologically informed computational models benchmarked on electrophysiological data.
 
-A collection of resources pertaining to fine-tuning locally run neural networks, including a full pipleline to fine-tune both the Llama (Meta) and Gemma (Google) family of models. 
+- Collaborated closely with another student to design deep neural networks using a custom TensorFlow/Keras-based library.
+- Experimented with input formats, preprocessing strategies, and introduced recurrence into different layers of DCNNs to evaluate the effects of temporal dynamics on neural alignment.
+- Quantified neural alignment by comparing model neuron responses to MSTd neuron properties reported in prior studies on primates.
 
-![Link to img](/path/to/img.jpg)
+**Results**
+- Identified the critical role of naturalistic input in achieving biological alignment.
+- Demonstrated how recurrence at specific network stages improved motion perception model accuracy and biological plausibility.
+- Presented research findings to a general audience at the Colby Undergraduate Summer Research Retreat (CUSRR).
+- Contributed to results currently being prepared for publication with our faculty advisor.
 
-## Get in Touch
-**Email**: madelynpuzon@gmail.com
+This project advanced theoretical understanding of primate dorsal visual stream processing as well as shaped my interest in designing AI systems to better understand highly complex systems like the human brain.
+
+### Heading Perception Experiment Design & Data Collection (OWLab)
+Alongside the above core projects, I contributed to the design and execution of two motion perception experiments that expanded the OWLab’s datasets for human heading perception and object motion studies.
+- Assisted with debugging and refining parameters in a MATLAB-based moving object perception experiment.
+- Built off an existing Unity experiment framework to test follow-up hypotheses from initial heading perception work.
+Results
+- Produced rich datasets across 50+ participants, enabling further neural modeling research.
+- Findings from these experiments are being developed into manuscripts.
+  
+Through this work I honed skills in experimental design while picking up new programming languages and research best practices.
+
+### Adaptive Resonance Theory Machine Learning Model for Heading Prediction (OWLab)
+I investigated adaptive resonance theory (ART) as a biologically inspired alternative to backpropagation in models learning to determine heading direction.
+
+- Developed an ARTFLOW-based network yielding fully interpretable decision making without polysemanticity--a feature which renders certain backpropagation-based networks unexplainable.
+- Benchmarked the ART model against human subjects under simulated optic flow conditions.
+  
+**Results**
+- Achieved mean absolute error of 9.53° (horizontal) and 10.32° (vertical), surpassing human-level performance under analogous conditions.
+- Demonstrated explainable, low-complexity learning compared to backpropagation-based models.
+
+This work highlighted the value of interpretability in neural models, offering an alternative network architecture which prioritizes transparency and explainability with concrete technical performance improvements.
+
+### RAG Research and Institution Tailored Application (Davis Insitute for Artificial Intelligence)
+The majority of LLMs are designed to be generalists, but institutions often need specialized systems with access to secure, up-to-date information. Retrieval augmented generation (RAG) allows a model to access data from curated knowledge bases, reducing hallucinations and enabling source citation.
+- Contributed to designing MuleBot, a Colby-specific RAG system providing accurate answers from internal databases.
+- Helped collect, clean, and structure MuleBot’s knowledge base for reliable retrieval.
+Results
+- Improved MuleBot’s ability to provide Colby-specific information not found in public training data.
+- Enabled faculty, staff, and students to access trustworthy institutional knowledge through a conversational interface.
+This project demonstrated how LLMs can be responsibly customized to serve communities, balancing general-purpose capability with institution-specific accuracy.
+
+# Get in Touch!
+**Email**: madelynkpuzon@gmail.com
 
 **LinkedIn**: https://www.linkedin.com/in/madelyn-puzon/
