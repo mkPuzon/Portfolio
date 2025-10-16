@@ -11,11 +11,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
         
         :root {
-            --primary-color: #32447e;
-            --secondary-color: #0c7a47;
+            --primary-color: #2d2a2f;
+            --secondary-color: #583a91;
             --text-color: #e6dad2;
-            --text-color-dark: #232427;
-            --light-color: #427a94;
+            --light-color: #a7a3ad;
         }
         
         * {
@@ -321,6 +320,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#connect">Connect</a></li>
             </ul>
@@ -351,42 +351,53 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/p2.jpg" alt="Project thumbnail">
+                        <img src="assets/p2.jpg" alt="Guardian model thumbnail">
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">AI Tutoring</h3>
-                        <p>At the Davis Institute for Artificial Intelligence, I design locally run AI agents using fine-tuning and retrieval-augmented generation (RAG) to ensure privacy while tailoring functionality for faculty needs. I work with HuggingFace, TensorFlow, and Ollama libraries to deliver reliable and private AI solutions.</p>
-                        <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
+                        <h3 class="project-title">Fine-Tuned Guardian Model with End-to-End API</h3>
+                        <p>Developed and deployed a full-stack machine learning application to perform real-time sentiment analysis. This project involved wrapping a fine-tuned DistilBERT model , which achieved 95% accuracy, into a REST API using FastAPI. The entire application was containerized with Docker and deployed to the cloud, demonstrating a complete model-to-production workflow.
+                            <li><b>Tech Stack</b>: Python, PyTorch, Transformers, FastAPI, Docker, Hugging Face Spaces.</li>
+                            <li><b>Skills</b>: End-to-End MLOps, API Development, Model Deployment, Containerization.</li>
+                        </p>
+                            <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
                     </div>
                 </div>
                 
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/research_su25.png" alt="Project thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Deep Recurrent Image Computable Neural Network Design and Testing Library</h3>
+                        <p>
+                            <li>Collaborated closely with another student to design deep neural networks using a custom TensorFlow/Keras-based library.</li>
+                            <li>Leveraged modular design to rapidly prototype, train, and evaluate deep neural networks.</li>
+                            <li>Implemented recurrence and measured its impact on accuracy and neural alignment metrics.</li>
+                        </p>
+                        <a href="#projects" class="btn" style="margin-top: 1rem;">[Paper in the works]</a>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <div class="project-img">
                         <img src="assets/p1.jpg" alt="Project thumbnail">
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Building Locally Run Language Model Systems</h3>
-                        <p>Developed a local AI system integrating RAG and web search capabilities on consumer-grade hardware. Optimized open-source models for accuracy, coherence, and rule-following using Ollama. Fine-tuned Llama 3.2 and DistilBERT models for sentiment analysis and message classification, enhancing model accuracy by up to 40%.</p>
-                        <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
+                        <h3 class="project-title">-</h3>
+                        <p>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </p>
+                        <a href="https://github.com/mkPuzon/AURA" class="btn" style="margin-top: 1rem;">View Repo</a>
                     </div>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/p3.jpg" alt="Project thumbnail">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Biologically Inspired AI Network For Heading Prediction</h3>
-                        <p>Created a novel approach to the longstanding research problem of determining heading from optic flow using a biologically inspired neural network. Achieved human levels of accuracy without relying on high-level libraries. Implemented custom optimization algorithms, generated synthetic data, and performed comprehensive parameter tuning.</p>
-                        <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
-                    </div>
-                </div>
+
             </div>
-        </div>
     </section>
 
     </section id="work" style="background-color: var(--light-color);">
-    <div class="container">
+        <div class="container">
             <h2 class="section-title">Work Experience</h2>
             <div class="projects-grid">
                 <div class="project-card">
@@ -394,37 +405,46 @@
                         <img src="assets/research.png" alt="Project thumbnail">
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">A.I. Research Assistant & Tutor @ Davis Institute for Artificial Intelligence</h3>
-                        <p>- Designed and prototyped an automated glossary for educational
-- Engineered private AI solutions by training and evaluating open-source LLMs using RAG and fine-tuning, optimizing model performance for accurate and fair content filtering in educational research settings.
-- Assisted in developing platforms to ensure equitable access to AI tools, fostering proficiency and ethical usage across diverse audiences.</p>
-                        <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
+                        <h3 class="project-title">DavisAI Research Assistant & Tutor</h3>
+                        <p>
+                            <li>Designed and prototyped an self updating glossary system for institutional use.</li>
+                            <li>Engineered private AI solutions by training and evaluating open-source LLMs using RAG and fine-tuning, optimizing model performance for accurate and fair content filtering in educational research settings.</li>
+                            <li>Assisted in developing platforms to ensure equitable access to AI tools, fostering proficiency and ethical usage across diverse audiences.</li>
+                        </p>
+                        <a href="https://davisinstituteai.colby.edu/about/" class="btn" style="margin-top: 1rem;">Learn more about DavisAI</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/p1.jpg" alt="Project thumbnail">
+                        <img src="assets/research1.png" alt="OWLab Logo">
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Building Locally Run Language Model Systems</h3>
-                        <p>Developed a local AI system integrating RAG and web search capabilities on consumer-grade hardware. Optimized open-source models for accuracy, coherence, and rule-following using Ollama. Fine-tuned Llama 3.2 and DistilBERT models for sentiment analysis and message classification, enhancing model accuracy by up to 40%.</p>
-                        <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
+                        <h3 class="project-title">OWLab Research Assistant</h3>
+                        <p>
+                            <li>Assisted in the development of an AI model to predict heading direction from optic flow fields with rotational components.</li>
+                            <li>Conducted research on biologically inspired algorithms, with potential applications in real-time navigation and motion perception.</li>
+                            <li>Fine tuned experiment parameters and debugged data collection experiments in Matlab.</li>
+                        </p>
+                        <a href="https://sites.google.com/colby.edu/owlab" class="btn" style="margin-top: 1rem;">Learn more about the OWLab</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/p3.jpg" alt="Project thumbnail">
+                        <img src="assets/LogoColbyWithIcon.svg" alt="Colby Logo">
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Biologically Inspired AI Network For Heading Prediction</h3>
-                        <p>Created a novel approach to the longstanding research problem of determining heading from optic flow using a biologically inspired neural network. Achieved human levels of accuracy without relying on high-level libraries. Implemented custom optimization algorithms, generated synthetic data, and performed comprehensive parameter tuning.</p>
-                        <a href="#" class="btn" style="margin-top: 1rem;">View Project</a>
+                        <h3 class="project-title">Computer Science Department Teaching Assistant</h3>
+                        <p>
+                            <li>Provided hands-on debugging support, helping students troubleshoot software and resolve programming errors.</li>
+                            <li>Analyzed student submissions to identify common mistakes, allowing instructors to refine course materials.</li>
+                            <li>Proposed curriculum improvements based on observed trends, enhancing student learning outcomes.</li>
+                        </p>
+                            <a href="https://www.cs.colby.edu/" class="btn" style="margin-top: 1rem;">Colby CS department</a>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     
     <section id="skills">

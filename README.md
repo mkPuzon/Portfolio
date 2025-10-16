@@ -9,7 +9,7 @@ Hi there! I'm Maddie, a computer science and philosophy student specializing in 
 
 ## Work Experience
 **A.I. Research Assistant & Tutor @ Davis Institute for Artificial Intelligence (_October 2024 - Present_)**
-- Designed and prototyped an automated glossary for educational
+- Designed and prototyped an self updating glossary system for institutional use.
 - Engineered private AI solutions by training and evaluating open-source LLMs using RAG and fine-tuning, optimizing model performance for accurate and fair content filtering in educational research settings.
 - Assisted in developing platforms to ensure equitable access to AI tools, fostering proficiency and ethical usage across diverse audiences.
 
