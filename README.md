@@ -1,5 +1,5 @@
 # Madelyn Puzon - AI Engineer and Researcher
-Hi there! I'm Maddie, a computer science and philosophy student specializing in AI research with expertise in neural network architectures, biological vision modeling, and LLM optimization with 2+ years of research experience. To get in touch, click the icons below.
+Hi there! I'm Maddie, a computer science and philosophy student specializing in AI research with expertise in neural network architectures, biological vision modeling, and LLM optimization with 2+ years of research experience.
 
 #### **Technical Skills**: Python, WSL2, Git, TensorFlow, RAG, Fine-Tuning
 #### **Relevant Coursework**: Deep Learning, Neural Networks, Programming Languages, Mathematical Data Analysis and Visualization, Statistics and Data Science, Linear Algebra, Data Structures and Algorithms, Artificial Intelligence and Human Values.
