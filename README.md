@@ -37,7 +37,7 @@ Developed and deployed a full-stack machine learning application to perform real
 ![Link to img](/path/to/img.jpg)
 
 ### AI Understanding, Research, and Analytic glossary for AI education
-Designed and developed the backend for an AI powered self-updating glossary from cutting edge research on artificial intelligence. The AURA system scrapes research papers from a variety of AI subtoics, extracts key words and concepts, defines them within the contex of the paper, and integrates them into a PostgreSQL database.
+Designed and developed the backend for an AI powered self-updating glossary from cutting edge research on artificial intelligence. The AURA system scrapes research papers, extracts key words and concepts, defines them within the contex of the paper, and integrates them into a PostgreSQL database.
 
 ## Research
 ### Building and Evaluating Deep Image Computable Neural Networks (OWLab)
